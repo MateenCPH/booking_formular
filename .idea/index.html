@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forside</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+
+<header>
+    <h1>Travel reservation form</h1>
+</header>
+<hr/>
+
+<h2>*denotes mandatory</h2>
+
+
+<form action="modtagersider/modtager.html">
+    <div class="formmenu">
+        <label for="fname">*Full name:</label>
+        <input type="text" id="backgroundfieldtext" name="fname" value="FirstName LastName">
+
+        <label for="email">*Email address:</label>
+        <input type="text" id="backgroundfieldtext" name="email" value="EMAIL_ADDRESS">
+
+        *Select tour package:
+        <select name="packages">
+            <option value="One">One</option>
+            <option value="Two">Two</option>
+            <option value="Three">Three</option>
+        </select>
+
+        <label for="arr-date">*Arrival date:</label>
+        <input type="text" id="backgroundfieldtext" name="arr-date" value="d/m/y">
+
+        <label for="num-of-pers">*Number of persons:</label>
+        <input type="text" id="backgroundfieldtext" name="num-of-pers" value="number">
+    </div>
+
+    <div class="availmenu">
+        <h7>*What would you want to avail?</h7>
+        <input type="checkbox" id="choice1" name="choice1" value="Boarding">
+        <label for="choice1"> Boarding</label>
+        <input type="checkbox" id="choice2" name="choice2" value="Fooding">
+        <label for="choice2"> Fooding</label>
+        <input type="checkbox" id="choice3" name="choice3" value="SightSeeing">
+        <label for="choice3"> Sight seeing</label>
+    </div>
+
+    <div class="formmenu">
+        <label for="coupon">Discount coupon code:</label>
+        <input type="text" id="backgroundfieldtext" name="coupon" value="UNKNOWN_TYPE">
+
+        <h7>Terms and conditions</h7>
+        <input type="radio" name="answer1" value="yes"/> Yes
+        <input type="radio" name="answer2" value="no"/> No
+
+        <button type="submit">Complete reservation</button>
+    </div>
+</form>
+
+</body>
+</html>
